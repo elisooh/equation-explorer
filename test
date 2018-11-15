@@ -1,0 +1,25 @@
+[var name:"ab" value:1 /]
+[var name:"cd" value:1 /]
+[var name:"ef" value:1 /]
+
+f(x) = a * sin (b*x) + c
+
+[Chart
+  equation:`(s) => Math.sin(s*ef) * ab +cd`
+  domain: `[0, 2 * Math.PI]`
+  samplePoints:1000 /]
+
+
+[Range
+  value:ab
+  min:0.5
+  max:`2 * Math.PI`
+  step:0.0001 /]
+The value of a is [Dispay value:ab format:"d" /].
+
+b
+[Range
+  value:cd
+  min:0
+  max:`10`
+  step:1 /]
